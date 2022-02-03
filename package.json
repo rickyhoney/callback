@@ -1,0 +1,24 @@
+{
+  "name": "callback",
+  "version": "1.0.0",
+  "description": "",
+  "main": "esercitazione.js",
+  "dependencies": {
+    "ajax": "0.0.4",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickyhoney/callback.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rickyhoney/callback/issues"
+  },
+  "homepage": "https://github.com/rickyhoney/callback#readme"
+}

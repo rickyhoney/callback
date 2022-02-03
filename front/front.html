@@ -1,0 +1,56 @@
+<html>
+    <head>
+    
+        <title> ESERCITAZIONE </title>
+
+    </head>
+    
+    <body>
+
+       
+       
+        <input id = "login" type= "text" name = "login">
+        <input id = "password" type= "text" name = "password">
+        
+        <button id = "logbt" > sign in </button>
+        <button id = "regbt" > sign up </button>
+
+        
+        
+
+        <script src = https://code.jquery.com/jquery-3.6.0.min.js ></script>
+
+        <script>
+
+
+
+            $("#logbt").click(function(){
+                
+            var login = document.getElementById('login').value;
+                console.log(login);  
+
+            var password = document.getElementById('password').value;
+                console.log(password);  
+
+                
+            jQuery.ajax({
+
+            method: "GET",
+            url: "http://localhost:3000/register",
+            data: { log: login, psw: password },
+            success: function(data, textStatus, jXHR) {
+            console.log("funzione chiamata quando la chiamata ha successo (response 200)", data, textStatus, jXHR);
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+            console.log("funzione chiamata quando la chiamata fallisce", jqXHR, textStatus, errorThrown);  
+            }
+            })
+
+
+            });
+        
+        </script>
+
+    </body>
+
+</html>
